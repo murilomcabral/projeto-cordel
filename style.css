@@ -80,7 +80,7 @@ ul li {
 
 .bgcontainer0 {
    background: var(--whiteBg);
-   background-image: url('https://img.freepik.com/free-photo/white-paper-texture-background-cardboard-surface-from-paper-box-packing-designs-decoration-nature-background-concept_174431-22.jpg?w=996');
+   background-image: url('imagens/whitebg.png');
    background-size: cover;
 }
 
