@@ -8,70 +8,22 @@
    --boldfont: 'Passion One', cursive;
    --cursfont: 'Caveat', cursive;
    --formalfont: Arial, sans-serif;
+   --textSdw: 0px 5px 10px black, 0px 5px 20px #00000080;
+   --whiteBg: #eeeeee center center no-repeat;
+   --bgImg1: #eeeeee center center no-repeat fixed;
 }
+
+/*
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+*/
 
 * {
    margin: 0px;
    padding: 0px;
    text-decoration: none;
-}
-
-header {
-   background-color: black;
-   color: white;
-   height: 200px;
-   padding: 15px;
-   position: relative;
-}
-
-header div {
-   height: 100%;
-   position: relative;
-}
-
-header h1 {
-   display: inline-block;
-   inline-size: 100%;
-   font-family: var(--boldfont);
-   font-size: 6em;
-   text-align: center;
-   max-width: 100%;
-   padding: 40px 0px 0px;
-   font-variant: small-caps;
-}
-
-header p {
-   display: inline-block;
-   inline-size: 100%;
-   font-family: var(--formalfont);
-   font-size: 1.1em;
-   text-align: center;
-   padding: 0px 0px 50px;
-}
-
-ul {
-   list-style-position: inside;
-   list-style: none;
-   margin: 15px;
-   padding: 15px;
-}
-
-ul li {
-   font: 2em var(--cursfont);
-   font-size-adjust: inherit;
-}
-
-footer {
-   background-color: black;
-   color: white;
-   text-align: center;
-   height: 20px;
-   padding: 3px;
-}
-
-footer a {
-   font-weight: bold;
-   color: white;
 }
 
 a:visited {
@@ -80,4 +32,91 @@ a:visited {
 
 a:hover {
    color: coral;
+}
+
+body {
+   display: block;
+   position: relative;
+}
+
+header {
+   background-color: black;
+   color: white;
+   max-height: fit-content;
+   padding: 15px;
+   position: relative;
+   text-align: center;
+   word-wrap: normal;
+}
+
+header h1 {
+   font-family: var(--boldfont);
+   font-size: 6em;
+   max-width: 100%;
+   padding: 40px 0px 0px;
+   font-variant: small-caps;
+}
+
+header p {
+   font-family: var(--formalfont);
+   font-size: 1.1em;
+   padding: 0px 0px 50px;
+}
+
+main div {
+   padding: 60px 30px;
+}
+
+ul {
+   list-style-position: inside;
+   list-style: none;
+   padding: 30px 0px;
+}
+
+ul li {
+   font: 2.5em var(--cursfont);
+   font-size-adjust: inherit;
+}
+
+.bgcontainer0 {
+   background: var(--whiteBg);
+   background-image: url('https://img.freepik.com/free-photo/white-paper-texture-background-cardboard-surface-from-paper-box-packing-designs-decoration-nature-background-concept_174431-22.jpg?w=996');
+   background-size: cover;
+}
+
+.bgcontainer1 {
+   background: var(--bgImg1);
+   background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
+   background-size: cover;
+   color: white;
+   text-shadow: var(--textSdw);
+}
+
+.bgcontainer2 {
+   background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   color: white;
+   text-shadow: var(--textSdw);
+}
+
+.transpbg {
+   background-color: #00000050;
+   padding: 15px;
+   max-width: fit-content;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   max-height: max-content;
+   padding: 3px;
+}
+
+footer a {
+   font-weight: bold;
+   color: white;
 }
