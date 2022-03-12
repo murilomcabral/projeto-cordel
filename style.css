@@ -13,25 +13,23 @@
    --bgImg1: #eeeeee center center no-repeat fixed;
 }
 
-/*
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-background-attachment: fixed;
-*/
-
 * {
    margin: 0px;
    padding: 0px;
    text-decoration: none;
 }
 
+a:link {
+   color: #41d0ff;
+}
+
 a:visited {
-   color: lightblue;
+   color: #a8dff1;
 }
 
 a:hover {
    color: coral;
+   transition: 100ms;
 }
 
 body {
