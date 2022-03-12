@@ -13,29 +13,60 @@
 * {
    margin: 0px;
    padding: 0px;
+   text-decoration: none;
 }
 
 header {
    background-color: black;
    color: white;
-   margin: auto;
    height: 200px;
+   padding: 15px;
+   position: relative;
 }
 
 header div {
-   padding: 15px;
    height: 100%;
+   position: relative;
 }
 
 header h1 {
+   display: inline-block;
+   inline-size: 100%;
    font-family: var(--boldfont);
-   font-size: 5em;
+   font-size: 6em;
    text-align: center;
+   max-width: 100%;
+   padding: 40px 0px 0px;
+   font-variant: small-caps;
 }
 
 header p {
    display: inline-block;
+   inline-size: 100%;
    font-family: var(--formalfont);
-   font-size: 1.3em;
-   margin: auto;
+   font-size: 1.1em;
+   text-align: center;
+   padding: 0px 0px 50px;
+}
+
+
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 20px;
+   padding: 3px;
+}
+
+footer a {
+   font-weight: bold;
+   color: white;
+}
+
+a:visited {
+   color: lightblue;
+}
+
+a:hover {
+   color: coral;
 }
