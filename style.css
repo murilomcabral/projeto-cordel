@@ -11,6 +11,8 @@
    --textSdw: 0px 5px 10px black, 0px 5px 20px #00000080;
    --whiteBg: #eeeeee center center no-repeat;
    --bgImg1: #eeeeee center center no-repeat fixed;
+   --trans1: 150ms;
+   --lhovercolor: #ffff55;
 }
 
 * {
@@ -19,17 +21,30 @@
    text-decoration: none;
 }
 
-a:link {
+a:link[rel=nofollow] {
+   color: #ffffff;
+}
+
+a:visited[rel=nofollow] {
+   color: #bbbbbb;
+}
+
+a:hover[rel=nofollow] {
+   color: var(--lhovercolor);
+   transition: var(--trans1);
+}
+
+footer a:link {
    color: #41d0ff;
 }
 
-a:visited {
+footer a:visited {
    color: #a8dff1;
 }
 
-a:hover {
-   color: coral;
-   transition: 100ms;
+footer a:hover {
+   color: var(--lhovercolor);
+   transition: var(--trans1);
 }
 
 body {
